@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        GITHUB
+    </h3>
+    <p>
+        Github is a website where Git projects are stored online.
+    </p>
+    <p>
+        Git is the tool. Github is the cloud storage for git projects.
+    </p>
+
+    <p>
+        Github allows you:
+    </p>
+    <ul>
+        <li>Backup your code</li>
+        <li>Share projects</li>
+        <li>Build projects</li>
+        <li>Collaborate</li>
+    </ul>
+    <h3>
+        Push Project To Github
+    </h3>
+    <h3>Step 1. Create a Repository</h3>
+    <ol>
+    <li>Go to github</li>
+    <li>Click New Repository</li>
+    <li>Enter a repository name (e.g my-first-project)</li>
+    <li>Click Create Repository</li>
+    <li>Leave the page open</li>
+    </ol>
+
+
+    <hr>
+
+    <h3>
+        Step 2: Open your project in VS Code.
+    </h3>
+    <p>
+        Open the folder that contains your project files
+    </p>
+
+    <hr>
+
+    <h3>
+        Step 3: Open Terminal in VS Code (ctrl + j)
+    </h3>
+
+    <hr>
+
+    <h3>
+       
+    </h3>
+
+    <hr>
+
+    <h3>
+        Step 4:  Initialize Git
+    </h3>
+    <pre>
+        <code>
+            git init
+        </code>
+    </pre>
+    <p>
+        this tells git to start tracking this project
+    </p>
+
+    <hr>
+
+    <h3>
+        Step 5: Check files
+    </h3>
+    <pre>
+        <code>
+        git status
+        </code>
+    </pre>
+    <p>
+        you will see untracked files
+    </p>
+
+    <hr>
+    <h3>
+        Step 6: Stage files
+    </h3>
+
+    <pre>
+        <code>
+            git add .
+        </code>
+    </pre>
+    <p>
+        add: means move files to the staging area 
+    </p>
+    <p>
+        . : means everything
+    </p>
+    <p>
+        the staging area is like a waiting room
+    </p>
+
+    <hr>
+    <h3>
+        Step 7: Commit files 
+    </h3>
+
+    <pre>
+        <code>
+            git commit -m "first commit"
+        </code>
+    </pre>
+    <p>
+       commit: means save a asnapshot 
+    </p>
+    <p>
+        -m: message
+    </p>
+    <p>
+        Example: git commit -m "just created a footer"
+    </p>
+
+    <hr>
+
+    <h3>
+        Step 8: Connect Local Project To Github
+    </h3>
+
+    <p>
+        Copy the URL from Github. Example: https://github.com/yourname/my-first-project.git
+    </p>
+    <p>
+        Run this on your terminal
+    </p>
+
+    <pre>
+        <code>
+            git remote add origin
+        </code>
+        <code>
+            https://github.com/yourname/my-first-project.git
+        </code>
+    </pre>
+    <p>
+        remote: means online repository
+    </p>
+    <p>
+        Origin: means nickname for github
+    </p>
+    <p>
+        Check: <code>
+            git  remote -v
+        </code>
+    </p>
+
+    <hr>
+
+    <h3>
+        Step 9: Rename Branch To Main
+    </h3>
+    <pre>
+        <code>
+            git branch -M main
+        </code>
+    </pre>
+    <p>
+        branch: means line of development
+    </p>
+    <p>
+        main: means primary branch
+    </p>
+
+    <hr>
+
+    <h3>
+
+        Step 10: Push to Github
+    </h3>
+    <pre>
+        <code>
+            git push -u origin main
+        </code>
+    </pre>
+    <p>
+        push: upload
+    </p>
+    <p>
+        origin: github repository
+    </p>
+    <p>
+        main: branch main
+    </p>
+    <p>
+        Go and refresh your github, these files will now appear on Github
+    </p>
+
+
+    <hr>
+
+
+
+    <p>
+        Suppose you edit your files . or each time you edit your file.
+    </p>
+
+    <ol>
+    <li>
+        Check changes: git status
+    </li>
+    <li>
+        Stage changes: git add . 
+    </li>
+    <li>Commit changes: git commit -m "Updated homepage</li>
+    <li>
+        Push changes: git push
+    </li>
+    </ol>
+    
+    <p>
+        That's it. Repeat these four cycle whenever you update a project
+    </p>
+</body>
+</html>
