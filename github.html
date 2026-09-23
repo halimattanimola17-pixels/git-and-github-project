@@ -226,5 +226,57 @@
     <p>
         That's it. Repeat these four cycle whenever you update a project
     </p>
+
+    <h3>
+        Clone a repo
+    </h3>
+    <ol>
+        <li>
+            <h5>Copy the repo URL</h5>
+            <p>
+                on Github, open the repository &rArr; code &rarr; copy the HTTPS URL  <br>
+                Example: https://github.com/username/projectname.git
+            </p>
+        </li>
+
+        <li>
+            <h5>
+                Open CMD / Powershell / VS Code Terminal
+            </h5>
+            <p>
+                Navigate to where you want the project <br> Example:
+                <br> <code>cd desktop</code>
+            </p>
+        </li>
+
+        <li>
+            <h5>Clone it</h5>
+            <code>
+                git clone https://github.com/username/projectname.git
+            </code>
+        </li>
+
+        <li>
+            <h5>
+                Enter the project
+            </h5>
+            <code>
+                cd projectname
+            </code>
+        </li>
+
+        <li>
+            <h5>
+                Check that Git is connected
+            </h5>
+            <code>
+                git remote v
+            </code>
+            <p>
+                You should see something like: <br><br> origin https://github.com/userrname/projectname.git(fetch) <br>
+                https://github.com/username/projectname.git(push) <br><br> That's it. The repository is now on your PC.
+            </p>
+        </li>
+    </ol>
 </body>
 </html>
